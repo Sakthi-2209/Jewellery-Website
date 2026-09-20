@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Raj Jewellery Workshop - Premium Gold & Silver Jewellery craftsmanship.">
+    <title>Raj Jewellery Workshop | Gold & Silver Jewellery</title>
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Raj Jewellery Workshop | Premium Jewellery">
+    <meta property="og:description" content="Beautifully crafted jewellery made with care, tradition and attention to detail.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css?v=1.1">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="70" tabindex="0">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top transition-all" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand text-gold playfair fw-bold" href="#home">RAJ JEWELLERY WORKSHOP</a>
+            
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list text-gold fs-1"></i>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#previous-works">Previous Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a href="#" class="btn btn-gold btn-whatsapp-nav rounded-pill px-4" onclick="openWhatsApp('general'); return false;">
+                            <i class="bi bi-whatsapp me-2"></i> WhatsApp
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home / Hero Section -->
+        <section id="home" class="hero-section d-flex align-items-center position-relative">
+            <div class="hero-bg-image"></div>
+            <div class="hero-bg-overlay"></div>
+            <div class="container position-relative z-3">
+                <div class="row">
+                    <div class="col-lg-8 col-xl-7 hero-content fade-in-up">
+                        <span class="small-label text-gold tracking-widest text-uppercase mb-3 d-block fw-medium">Traditional Gold Craftsmanship</span>
+                        <h1 class="display-3 playfair fw-bold text-white mb-4">
+                            Crafting Gold,<br>Creating Memories.
+                        </h1>
+                        <p class="lead text-muted-gold mb-5 poppins">
+                            Beautifully crafted gold jewellery designed with care, attention to detail and a timeless sense of style.
+                        </p>
+                        
+                        <div class="d-grid gap-3 d-md-flex flex-md-wrap mb-5">
+                            <a href="#previous-works" class="btn btn-gold px-4 py-3 rounded-0 text-uppercase tracking-wider">
+                                Explore Previous Works
+                            </a>
+                            <a href="#" onclick="openWhatsApp('general'); return false;" class="btn btn-gold-outline px-4 py-3 rounded-0 text-uppercase tracking-wider d-flex align-items-center justify-content-center">
+                                <i class="bi bi-whatsapp me-2"></i> WhatsApp Us
+                            </a>
+                        </div>
+                        
+                        <div class="hero-decorative-line mb-4"></div>
+                        
+                        <div class="d-flex flex-wrap gap-4 mt-4 text-white poppins text-xs tracking-wider opacity-75">
+                            <span class="d-flex align-items-center"><i class="bi bi-star-fill text-gold me-2 small"></i> 916 Gold</span>
+                            <span class="d-flex align-items-center"><i class="bi bi-star-fill text-gold me-2 small"></i> Custom Designs</span>
+                            <span class="d-flex align-items-center"><i class="bi bi-star-fill text-gold me-2 small"></i> Traditional Craftsmanship</span>
+                            <span class="d-flex align-items-center"><i class="bi bi-star-fill text-gold me-2 small"></i> Personalised Service</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#about" class="scroll-down-indicator text-gold text-decoration-none">
+                <span class="d-block mb-2 text-uppercase text-xs tracking-widest">Scroll</span>
+                <i class="bi bi-chevron-down animated-bounce"></i>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-10 bg-dark-brown">
+            <div class="container" style="max-width: 1100px;">
+                <!-- Header -->
+                <div class="text-center mb-5 pb-2 fade-in-up">
+                    <span class="small-label text-gold tracking-widest text-uppercase d-block mb-3">About Us</span>
+                    <h2 class="playfair display-6 text-white mb-4">Timeless Jewellery,<br>Made With Care</h2>
+                    <div class="heading-decorative-line mx-auto"></div>
+                </div>
+                
+                <!-- Main Content Row -->
+                <div class="row g-4 g-lg-5 mb-5 pb-3 fade-in-up" style="transition-delay: 0.1s;">
+                    
+                    <!-- Left Content -->
+                    <div class="col-lg-6 pe-lg-5">
+                        <h5 class="playfair text-gold mb-1">RAJ JEWELLERY WORKSHOP</h5>
+                        <p class="text-muted-gold small tracking-widest text-uppercase mb-4">Proprietor: R. Alwin Achariyar</p>
+                        
+                        <p class="text-muted-gold poppins mb-4 lh-lg">
+                            At Raj Jewellery Workshop, we specialise in 916 KDM Hallmark gold jewellery and silver jewellery. We create jewellery according to customer orders and designs, with careful attention to detail and individual requirements.
+                        </p>
+                        <p class="text-muted-gold poppins lh-lg mb-0">
+                            Whether you have a specific design in mind or want to create something personalised, we work closely with you to bring your requirements into a finished piece of jewellery.
+                        </p>
+                    </div>
+                    
+                    <!-- Right Content -->
+                    <div class="col-lg-6 ps-lg-4">
+                        <h5 class="playfair text-white mb-4">What We Do</h5>
+                        
+                        <div class="d-flex flex-column gap-4">
+                            <!-- Item 1 -->
+                            <div class="d-flex">
+                                <span class="text-gold playfair fs-5 me-4">01</span>
+                                <div>
+                                    <h6 class="text-white poppins fw-medium mb-1">916 KDM Hallmark Gold Jewellery</h6>
+                                    <p class="text-muted-gold small mb-0 lh-base">Quality-focused gold jewellery made according to your requirements.</p>
+                                </div>
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="d-flex">
+                                <span class="text-gold playfair fs-5 me-4">02</span>
+                                <div>
+                                    <h6 class="text-white poppins fw-medium mb-1">Silver Jewellery</h6>
+                                    <p class="text-muted-gold small mb-0 lh-base">Silver jewellery crafted to suit your preferred design.</p>
+                                </div>
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="d-flex">
+                                <span class="text-gold playfair fs-5 me-4">03</span>
+                                <div>
+                                    <h6 class="text-white poppins fw-medium mb-1">Custom Jewellery & Repairs</h6>
+                                    <p class="text-muted-gold small mb-0 lh-base">Custom gold and silver jewellery and careful repair work.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Bottom Highlights -->
+                <div class="row text-center fade-in-up" style="transition-delay: 0.2s;">
+                    <div class="col-12">
+                        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center border-top border-bottom border-gold-thin py-4 px-md-5">
+                            
+                            <div class="mb-4 mb-md-0 position-relative w-100">
+                                <h6 class="text-gold tracking-widest text-uppercase small mb-1">916 GOLD</h6>
+                                <span class="text-muted-gold small">Gold jewellery</span>
+                                <div class="d-none d-md-block position-absolute end-0 top-50 translate-middle-y" style="width: 1px; height: 40px; background-color: var(--muted-gold); opacity: 0.3;"></div>
+                            </div>
+                            
+                            <div class="mb-4 mb-md-0 position-relative w-100">
+                                <h6 class="text-gold tracking-widest text-uppercase small mb-1">SILVER</h6>
+                                <span class="text-muted-gold small">Silver jewellery</span>
+                                <div class="d-none d-md-block position-absolute end-0 top-50 translate-middle-y" style="width: 1px; height: 40px; background-color: var(--muted-gold); opacity: 0.3;"></div>
+                            </div>
+                            
+                            <div class="w-100">
+                                <h6 class="text-gold tracking-widest text-uppercase small mb-1">CUSTOM</h6>
+                                <span class="text-muted-gold small">Made to order</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-10 bg-deep-black">
+            <div class="container">
+                <div class="text-center mb-5 fade-in-up">
+                    <span class="small-label text-gold tracking-widest text-uppercase d-block mb-2">What We Do</span>
+                    <h2 class="playfair display-5 text-white">Our Services</h2>
+                    <div class="heading-decorative-line mx-auto mt-3"></div>
+                </div>
+                
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-3 fade-in-up" style="transition-delay: 0.1s;">
+                        <div class="service-card h-100 p-4 border-gold-thin text-center transition-all">
+                            <i class="bi bi-tools text-gold display-4 mb-3"></i>
+                            <h4 class="playfair text-white mb-3">Gold Jewellery Making</h4>
+                            <p class="text-muted-gold small mb-0">Beautifully crafted gold jewellery made according to your requirements.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3 fade-in-up" style="transition-delay: 0.2s;">
+                        <div class="service-card h-100 p-4 border-gold-thin text-center transition-all">
+                            <i class="bi bi-stars text-gold display-4 mb-3"></i>
+                            <h4 class="playfair text-white mb-3">Custom Jewellery</h4>
+                            <p class="text-muted-gold small mb-0">Create a personalised piece based on your preferred design or idea.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3 fade-in-up" style="transition-delay: 0.3s;">
+                        <div class="service-card h-100 p-4 border-gold-thin text-center transition-all">
+                            <i class="bi bi-flower1 text-gold display-4 mb-3"></i>
+                            <h4 class="playfair text-white mb-3">Traditional Designs</h4>
+                            <p class="text-muted-gold small mb-0">Timeless jewellery inspired by traditional Indian craftsmanship.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3 fade-in-up" style="transition-delay: 0.4s;">
+                        <div class="service-card h-100 p-4 border-gold-thin text-center transition-all">
+                            <i class="bi bi-heart text-gold display-4 mb-3"></i>
+                            <h4 class="playfair text-white mb-3">Wedding Jewellery</h4>
+                            <p class="text-muted-gold small mb-0">Elegant jewellery for special occasions and celebrations.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3 fade-in-up" style="transition-delay: 0.5s;">
+                        <div class="service-card h-100 p-4 border-gold-thin text-center transition-all">
+                            <i class="bi bi-gem text-gold display-4 mb-3"></i>
+                            <h4 class="playfair text-white mb-3">Silver Jewellery</h4>
+                            <p class="text-muted-gold small mb-0">Silver jewellery crafted with care according to your requirements and preferred designs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Previous Works Section -->
+        <section id="previous-works" class="py-10 bg-deep-black">
+            <div class="container">
+                <div class="text-center mb-5 fade-in-up">
+                    <span class="small-label text-gold tracking-widest text-uppercase d-block mb-2">Portfolio</span>
+                    <h2 class="playfair display-5 text-white">Previous Works</h2>
+                    <p class="text-muted-gold poppins mt-3">A glimpse of our handcrafted jewellery.</p>
+                    <div class="heading-decorative-line mx-auto mt-3 mb-5"></div>
+                </div>
+                
+                <!-- Gallery Grid -->
+                <div class="d-flex flex-wrap justify-content-center gap-3" id="gallery-grid">
+                    <!-- Cards will be dynamically inserted here via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-10 bg-deep-black position-relative">
+            <div class="container">
+                <div class="row justify-content-center text-center mb-5 fade-in-up">
+                    <div class="col-lg-8">
+                        <span class="small-label text-gold tracking-widest text-uppercase d-block mb-2">Get In Touch</span>
+                        <h2 class="playfair display-5 text-white">Let's Create Something Beautiful</h2>
+                        <div class="heading-decorative-line mx-auto mt-3 mb-4"></div>
+                        <p class="text-muted-gold poppins">We would love to hear from you. Reach out to discuss your jewellery needs.</p>
+                    </div>
+                </div>
+                
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-4 fade-in-up" style="transition-delay: 0.1s;">
+                        <div class="contact-card text-center p-4 h-100 border-gold-thin">
+                            <div class="icon-circle mx-auto bg-dark-brown border-gold d-flex align-items-center justify-content-center mb-4">
+                                <i class="bi bi-telephone text-gold fs-4"></i>
+                            </div>
+                            <h4 class="text-white playfair mb-3">Phone</h4>
+                            <p class="text-muted-gold small mb-4">R. Alwin Achariyar<br>63791 09151</p>
+                            <a href="tel:+916379109151" id="callNowBtn" class="btn btn-gold-outline w-100">CALL NOW</a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 fade-in-up" style="transition-delay: 0.2s;">
+                        <div class="contact-card text-center p-4 h-100 border-gold-thin">
+                            <div class="icon-circle mx-auto bg-dark-brown border-gold d-flex align-items-center justify-content-center mb-4">
+                                <i class="bi bi-whatsapp text-gold fs-4"></i>
+                            </div>
+                            <h4 class="text-white playfair mb-3">WhatsApp</h4>
+                            <p class="text-muted-gold small mb-4">Send us a message for quick details.</p>
+                            <a href="#" onclick="openWhatsApp('general'); return false;" class="btn btn-gold w-100">WHATSAPP US</a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 fade-in-up" style="transition-delay: 0.3s;">
+                        <div class="contact-card text-center p-4 h-100 border-gold-thin">
+                            <div class="icon-circle mx-auto bg-dark-brown border-gold d-flex align-items-center justify-content-center mb-4">
+                                <i class="bi bi-geo-alt text-gold fs-4"></i>
+                            </div>
+                            <h4 class="text-white playfair mb-3">Location</h4>
+                            <p class="text-muted-gold small mb-4">Kasi Complex, Behind Sivan Temple,<br>Perambalur – 621 212, Tamil Nadu.</p>
+                            <a href="https://maps.google.com/?q=Kasi+Complex,+Behind+Sivan+Temple,+Perambalur+-+621212,+Tamil+Nadu" target="_blank" class="btn btn-gold-outline w-100">GET DIRECTIONS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-deep-black py-5 py-lg-7 border-top border-gold-thin">
+        <div class="container">
+            <div class="row g-4 g-lg-5">
+                <!-- Column 1: Business -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="playfair text-gold mb-4">RAJ JEWELLERY WORKSHOP</h4>
+                    <p class="text-muted-gold poppins small lh-lg mb-4">Proprietor: R. Alwin Achariyar<br>Traditional craftsmanship. Timeless jewellery designed with care and attention to detail.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" onclick="openWhatsApp('general'); return false;" class="social-icon">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                        <a href="tel:+916379109151" class="social-icon">
+                            <i class="bi bi-telephone"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white playfair mb-4">Quick Links</h5>
+                    <ul class="list-unstyled poppins small">
+                        <li class="mb-3"><a href="#home" class="text-muted-gold text-decoration-none hover-gold transition-all">Home</a></li>
+                        <li class="mb-3"><a href="#about" class="text-muted-gold text-decoration-none hover-gold transition-all">About</a></li>
+                        <li class="mb-3"><a href="#services" class="text-muted-gold text-decoration-none hover-gold transition-all">Services</a></li>
+                        <li class="mb-3"><a href="#previous-works" class="text-muted-gold text-decoration-none hover-gold transition-all">Previous Works</a></li>
+                        <li class="mb-3"><a href="#contact" class="text-muted-gold text-decoration-none hover-gold transition-all">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white playfair mb-4">Contact</h5>
+                    <ul class="list-unstyled poppins small text-muted-gold">
+                        <li class="mb-3 d-flex">
+                            <i class="bi bi-telephone text-gold me-3 mt-1"></i>
+                            <div>
+                                <strong class="text-white d-block mb-1">Phone</strong>
+                                <a href="tel:+916379109151" class="text-muted-gold text-decoration-none">63791 09151</a>
+                            </div>
+                        </li>
+                        <li class="mb-3 d-flex">
+                            <i class="bi bi-whatsapp text-gold me-3 mt-1"></i>
+                            <div>
+                                <strong class="text-white d-block mb-1">WhatsApp</strong>
+                                <a href="#" onclick="openWhatsApp('general'); return false;" class="text-muted-gold text-decoration-none">Message Us</a>
+                            </div>
+                        </li>
+                        <li class="d-flex">
+                            <i class="bi bi-clock text-gold me-3 mt-1"></i>
+                            <div>
+                                <strong class="text-white d-block mb-1">Business Hours</strong>
+                                <span>Mon - Sat: 10:00 AM - 8:00 PM</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Location -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white playfair mb-4">Our Location</h5>
+                    <div class="rounded border-gold-thin overflow-hidden mb-3" style="height: 150px; background-color: var(--dark-brown);">
+                        <!-- Replace with the actual Google Maps embed URL iframe -->
+                        <iframe src="https://maps.google.com/maps?q=Sivan+Temple,+Perambalur,+Tamil+Nadu&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <a href="https://maps.google.com/?q=Kasi+Complex,+Behind+Sivan+Temple,+Perambalur+-+621212,+Tamil+Nadu" target="_blank" class="btn btn-gold-outline btn-sm w-100 text-uppercase tracking-wider text-xs py-2">
+                        View on Google Maps
+                    </a>
+                </div>
+            </div>
+            
+            <div class="row mt-5 pt-4 border-top border-gold-thin" style="opacity: 0.5;">
+                <div class="col-12 text-center">
+                    <p class="small text-muted-gold mb-0 poppins">&copy; 2026 Raj Jewellery Workshop. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Collection Modal -->
+    <div class="modal fade" id="collectionModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark-brown border-gold">
+                <div class="modal-header border-bottom-0 pb-0">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center pt-0 pb-4 px-4">
+                    <h5 class="text-gold tracking-widest text-uppercase d-block mb-4 text-xs">View Previous Work</h5>
+                    <img src="" id="modalImage" class="img-fluid mb-4 border-gold-thin placeholder-img w-100 object-fit-cover rounded" alt="Jewellery" style="max-height: 65vh;">
+                    <a href="#" id="modalWhatsAppBtn" class="btn btn-gold px-5 py-3 rounded-0 text-uppercase tracking-wider">
+                        <i class="bi bi-whatsapp me-2"></i> Enquire on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="#" onclick="openWhatsApp('general'); return false;" class="floating-whatsapp d-flex align-items-center justify-content-center shadow-lg" aria-label="Chat on WhatsApp">
+        <i class="bi bi-whatsapp fs-3"></i>
+    </a>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

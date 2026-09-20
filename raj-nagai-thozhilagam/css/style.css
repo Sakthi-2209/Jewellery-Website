@@ -1,0 +1,542 @@
+/* 
+    Raj Jewellery Workshop - Custom Styles
+    Design System: Luxury Gold Theme
+*/
+
+/* --- CSS Variables & Design Tokens --- */
+:root {
+    /* Colors */
+    --deep-black: #0B0906;
+    --dark-brown: #15100B;
+    --darker-brown: #1D160D;
+    --luxury-gold: #C9A227;
+    --muted-gold: #A67C16;
+    --cream: #F8F3E7;
+    --white: #FFFFFF;
+    --muted-text: #BDB5A7;
+    
+    /* Typography */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Poppins', sans-serif;
+}
+
+/* --- Global Styles --- */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--muted-text);
+    background-color: var(--deep-black);
+}
+
+h1, h2, h3, h4, h5, h6, .playfair {
+    font-family: var(--font-heading);
+}
+
+.poppins {
+    font-family: var(--font-body);
+}
+
+/* Color Utilities */
+.text-gold { color: var(--luxury-gold) !important; }
+.text-muted-gold { color: var(--muted-text) !important; }
+.bg-deep-black { background-color: var(--deep-black) !important; }
+.bg-dark-brown { background-color: var(--dark-brown) !important; }
+.border-gold { border: 2px solid var(--luxury-gold) !important; }
+.border-gold-thin { border: 1px solid rgba(201, 162, 39, 0.3) !important; }
+
+/* Typography Utilities */
+.display-3 { font-size: clamp(2.5rem, 6vw, 4rem) !important; }
+.display-5 { font-size: clamp(2rem, 4.5vw, 3rem) !important; }
+.display-6 { font-size: clamp(1.75rem, 3vw, 2.5rem) !important; }
+
+.tracking-widest { letter-spacing: 0.15em; }
+.tracking-wider { letter-spacing: 0.1em; }
+.text-xs { font-size: 0.75rem; }
+.lh-lg { line-height: 1.8 !important; }
+
+/* Spacing Utilities */
+.py-10 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+
+@media (min-width: 768px) {
+    .py-10 {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .py-10 {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
+}
+
+/* --- Buttons --- */
+.btn-gold {
+    background-color: var(--luxury-gold);
+    color: var(--deep-black);
+    font-weight: 500;
+    border: 1px solid var(--luxury-gold);
+    transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+    background-color: transparent;
+    color: var(--luxury-gold);
+    border-color: var(--luxury-gold);
+}
+
+.btn-gold-outline {
+    background-color: transparent;
+    color: var(--luxury-gold);
+    font-weight: 500;
+    border: 1px solid var(--luxury-gold);
+    transition: all 0.3s ease;
+}
+
+.btn-gold-outline:hover {
+    background-color: var(--luxury-gold);
+    color: var(--deep-black);
+}
+
+/* --- Navbar --- */
+.navbar {
+    padding: 1.5rem 0;
+    transition: all 0.4s ease;
+    background-color: transparent;
+}
+
+.navbar.scrolled {
+    padding: 0.8rem 0;
+    background-color: rgba(11, 9, 6, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(201, 162, 39, 0.3);
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: rgba(11, 9, 6, 0.98);
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        margin-top: 1rem;
+        border: 1px solid rgba(201, 162, 39, 0.2);
+    }
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    color: var(--white) !important;
+    font-size: 0.95rem;
+    font-weight: 400;
+    margin: 0 0.5rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--luxury-gold) !important;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--luxury-gold);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after, .nav-link.active::after {
+    width: 100%;
+}
+
+.custom-toggler {
+    border: none;
+    padding: 0;
+}
+
+.custom-toggler:focus {
+    box-shadow: none;
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    min-height: 100svh;
+    position: relative;
+    overflow: hidden;
+    padding: 6rem 0 4rem; /* For content overflow safety */
+}
+
+@media (max-width: 767.98px) {
+    .hero-section {
+        min-height: auto;
+        padding: 8rem 0 5rem;
+    }
+}
+
+.hero-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/hero/gold-jewellery-hero.jpg') right center / cover no-repeat;
+    animation: cinematic-zoom 20s ease-out forwards;
+}
+
+@media (max-width: 767.98px) {
+    .hero-bg-image {
+        background-position: 70% center;
+    }
+}
+
+@keyframes cinematic-zoom {
+    0% { transform: scale(1.0); }
+    100% { transform: scale(1.06); }
+}
+
+.hero-bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Gradient: darker on the left for text, fading out to the right */
+    background: linear-gradient(to right, rgba(11, 9, 6, 0.95) 0%, rgba(11, 9, 6, 0.6) 50%, rgba(11, 9, 6, 0.1) 100%);
+    /* Subtle vignette effect */
+    box-shadow: inset 0 0 120px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.hero-content {
+    padding-top: 5rem;
+}
+
+@media (max-width: 767.98px) {
+    .hero-content {
+        padding-top: 2rem;
+    }
+}
+
+.hero-decorative-line {
+    width: 60px;
+    height: 2px;
+    background-color: var(--luxury-gold);
+}
+
+.scroll-down-indicator {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 2;
+}
+
+/* --- About Section --- */
+
+
+/* --- Services Section --- */
+.service-card {
+    background-color: var(--dark-brown);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.service-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--luxury-gold);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+    transform-origin: left;
+}
+
+.service-card:hover::after {
+    transform: scaleX(1);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.heading-decorative-line {
+    width: 40px;
+    height: 2px;
+    background-color: var(--luxury-gold);
+}
+
+/* --- Collection Section --- */
+.filter-btn {
+    background: transparent;
+    border: 1px solid rgba(201, 162, 39, 0.3);
+    color: var(--white);
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background: var(--luxury-gold);
+    color: var(--deep-black);
+    border-color: var(--luxury-gold);
+}
+
+.gallery-item {
+    transition: all 0.4s ease;
+}
+
+.gallery-card {
+    border: 1px solid rgba(201, 162, 39, 0.2);
+    transition: transform 0.4s ease, border-color 0.4s ease;
+}
+
+.gallery-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(201, 162, 39, 0.6);
+}
+
+/* --- Gallery Grid Fix --- */
+@media (min-width: 992px) {
+    .gallery-col {
+        width: auto;
+        min-width: 20%;
+    }
+}
+
+.gallery-img-container img {
+    transition: transform 0.6s ease;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.gallery-img-container:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 9, 6, 0.5);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.gallery-img-container:hover .gallery-img-overlay {
+    opacity: 1;
+}
+
+.gallery-img-overlay i {
+    transform: scale(0.5);
+    transition: transform 0.4s ease;
+}
+
+.gallery-img-container:hover .gallery-img-overlay i {
+    transform: scale(1);
+}
+
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* --- Contact Section --- */
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.contact-card {
+    background-color: rgba(23, 18, 12, 0.5);
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+    background-color: var(--dark-brown);
+    transform: translateY(-5px);
+}
+
+/* --- Footer --- */
+.hover-gold:hover {
+    color: var(--luxury-gold) !important;
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(201, 162, 39, 0.1);
+    color: var(--luxury-gold);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background-color: var(--luxury-gold);
+    color: var(--deep-black);
+    transform: translateY(-3px);
+}
+
+/* --- Floating WhatsApp --- */
+.floating-whatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.floating-whatsapp:hover {
+    background-color: #128C7E;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* --- Modal Adjustments --- */
+.btn-close-white {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+/* --- Animations --- */
+.transition-all {
+    transition: all 0.4s ease;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.animated-bounce {
+    display: inline-block;
+    animation: bounce 2s infinite;
+}
+
+/* Scroll Reveal Classes */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in-left {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in-right {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in-up.visible, .fade-in-left.visible, .fade-in-right.visible {
+    opacity: 1;
+    transform: translate(0);
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 991px) {
+    .navbar {
+        background-color: rgba(11, 9, 6, 0.95);
+        backdrop-filter: blur(10px);
+        padding: 0.8rem 0;
+    }
+    
+    .navbar-nav {
+        padding: 1rem 0;
+        text-align: center;
+    }
+    
+    .nav-link::after {
+        display: none;
+    }
+    
+    .btn-whatsapp-nav {
+        display: inline-block;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        padding-top: 0;
+    }
+    
+    .display-3 {
+        font-size: 2.5rem;
+    }
+    
+    .display-5 {
+        font-size: 2rem;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .floating-whatsapp {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .floating-whatsapp i {
+        font-size: 1.5rem !important;
+    }
+}
+
+/* Ensure prefers-reduced-motion is respected */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+    .fade-in-up, .fade-in-left, .fade-in-right {
+        opacity: 1;
+        transform: none;
+    }
+}
